@@ -19,7 +19,8 @@ in strict mode
 ## Resources
 
 * [variables & hoisting](https://github.com/janke-learning/variables-and-hoisting)
-* undeclared study snippets
+* study snippets
+    * [declaration vs. assignment](https://goo.gl/14s6vU)  
     * [pytut - strict mode](https://goo.gl/3ERKsj) - pytut is always in strict mode
     * [replit - not strict](https://repl.it/@colevandersWands/undeclared-variables-not-strict)
     * [replit - strict mode](https://repl.it/@colevandersWands/undeclared-variables-strict)
