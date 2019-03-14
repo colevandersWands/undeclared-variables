@@ -1,86 +1,34 @@
-undeclared variables are not avaiable before their first assignment (like let & const), 
-but then are not bound to block scope (like var).
-
-strict mode does not allow this behavior
-and it's bad practice anyway
-
-can't read from them before assignment/declaration anyway
-
-
-on-page snippets for console pasting
----
-
-// undeclared variables are like var, not bound by blocks
-{
-  undeclared = "yips";
-};
-console.log(undeclared);
-
----
-
-
-console.log('- declared var -');
-console.log(declared);
-declared = "firstly";
-console.log(declared);
-var declared;
-
-console.log('\n- undeclared var -');
-// console.log(undeclared);
-undeclared = "secondly";
-console.log(undeclared);
-
-
----
-
-// be sure to refresh the browser after running this one, there's no way to undo strict mode
-"use strict";
-
-console.log('- declared var -');
-console.log(declared);
-declared = "firstly";
-console.log(declared);
-var declared;
-
-console.log('\n- undeclared var -');
-// console.log(undeclared);
-undeclared = "secondly";
-console.log(undeclared);
-
----
-
-// using strict doesn't undo, since "undeclared" variables become declared by assignment
-undeclared = 'before using strict';
-"use strict";
-console.log(undeclared);
-
-
 # Undeclared Variables
 
 
 
 ---
 
+## Learning Objectives
+
+in sloppy mode
+* assigning a value to an undeclared variable will automatically declare that variable 
+* variables declared by assignment have lexical scoping like "var", but are not hoisted (ie. can only be used after they have been assigned)
+* attempting to read from an undeclared variable will throw an error
+
+in strict mode
+* anything involving an undeclared variable will throw an error
+
+---
+
 ## Resources
 
-* [mdn: undeclared_var error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var)
-* undeclared variable study snippets
+* [variables & hoisting](https://github.com/janke-learning/variables-and-hoisting)
+* undeclared study snippets
     * [pytut - strict mode](https://goo.gl/3ERKsj) - pytut is always in strict mode
     * [replit - not strict](https://repl.it/@colevandersWands/undeclared-variables-not-strict)
     * [replit - strict mode](https://repl.it/@colevandersWands/undeclared-variables-strict)
+    * [assigning to undeclared before using strict](https://repl.it/@colevandersWands/undeclared-before-strict)
 * [strict mode](https://github.com/janke-learning/strict-mode)
-* [advanced but good](https://stackoverflow.com/questions/15985875/effect-of-declared-and-undeclared-variables)
-
-undefined vs undeclared
-  https://techbrij.com/javascript-null-undefined-undeclared
-  uses functions: https://lucybain.com/blog/2014/null-undefined-undeclared/
-  https://www.educba.com/undefined-vs-null/
-    goood
-    no undeclared
-  https://medium.com/technoetics/difference-between-null-undefined-and-not-defined-in-javascript-3a52a62894b
-
-
-
+* [mdn: undeclared_var error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Undeclared_var)
+* [undeclared vs undefined](https://www.quora.com/What-are-undeclared-and-undefined-variables-in-JavaScript)
+* [advanced but good stack-overflow](https://stackoverflow.com/questions/15985875/effect-of-declared-and-undeclared-variables)
+* [embedded examples](https://janke-learning.github.io/undeclared-variables)
 
 
 ___
