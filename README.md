@@ -1,6 +1,10 @@
 # Undeclared Variables
 
+To understand the difference between _undeclared_ variables and _undefined_ variables, it's important be comfortable with the life-cycle of variables.  
 
+__undeclared variables__: have never been explicitly initialized in your code with a _var_, _let_, or _const_.  attempting to use a variable that has not been declared makes it an undeclared variable.
+
+__undefined variables__: undefined variables have been explicitly initialized using either _var_, _let_, or _const_, and store the __primitive type: undefined__. 
 
 ---
 
